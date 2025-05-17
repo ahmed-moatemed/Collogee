@@ -7,8 +7,8 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
 
 // Replace with your Supabase URL and anon key
-const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+const SUPABASE_URL = window.env.SUPABASE_URL;
+const SUPABASE_ANON_KEY = window.env.SUPABASE_ANON_KEY;
 // Initialize the Supabase client
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
